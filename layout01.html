@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout01</title>
+    <style>
+        body {background:#E5EEFF }
+        #wrap {width: 1000px; height: 900px; margin: 0 auto; font-size: 20px; color: #fff; text-align: center; line-height: 900px;}
+        #header {width: 1000px; height: 100px; background: #4E8AFF; line-height: 100px;}
+        #nav {width: 1000px; height: 100px; background: #A7C5FF; line-height: 100px;}
+        #side {float: left; width: 300px; height: 600px; background: #CADCFF; line-height: 600px;}
+        #contents {float: left; width: 700px; height: 600px; background: #bbd2ff; line-height: 600px;}
+        #footer {float: left; width: 1000px; height: 100px; background: #B0B3FF; line-height: 100px;}
+        /* line-height 를 height값하고 같게 하면 한 줄일때 텍스트를 위아래 가운데 정렬 */
+    </style>
+</head>
+<body>
+    <div>
+        <div id="wrap">
+            <div id="header">HEADER</div>
+            <div id="nav">NAV</div>
+            <div id="side">SIDE</div>
+            <div id="contents">CONTENTS</div>
+            <div id="footer">FOOTER</div>
+        </div>
+    </div>
+</body>
+</html>
