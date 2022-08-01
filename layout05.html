@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout05</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        /* 자식에 height가 똑같이 있어서 부모에는 지움 */
+        #wrap {font-size: 40px; color: #fff; text-align: center; text-transform: uppercase;}
+        #header-wrap {width: 100%; background:#ebebeb; }
+        #banner-wrap {width: 100%; background: #adadad;}
+        #content-wrap {width: 100%; background:#ebebeb;}
+        #footer-wrap {width: 100%; background: #adadad;}
+
+        .header-container {width: 1000px; height: 100px; line-height: 100px; margin: auto; background: #4E8AFF;}
+        .banner-container {width: 1000px; height: 300px; line-height: 300px; margin: auto; background: #A7C5FF;}
+        .content-container {width: 1000px; height: 600px; line-height: 600px; margin: auto; background: #CADCFF;}
+        .footer-container {width: 1000px; height: 100px; line-height: 100px; margin: auto; background: #B0B3FF;}
+    </style>
+</head>
+<body><!-- 전체 영역 안에 가운데 영역 넣기-->
+    <div id="wrap">
+        <div id="header-wrap">
+            <div class="header-container">header</div>
+        </div>
+        <div id="banner-wrap">
+            <div class="banner-container">banner</div>    
+        </div>
+        <div id="content-wrap">
+            <div class="content-container">content</div>
+        </div>
+        <div id="footer-wrap">
+            <div class="footer-container">footer</div>
+        </div>
+    </div>
+</body>
+</html>
