@@ -14,9 +14,9 @@ background: #333; line-height: 30px; width: 180px; text-align: center;}
 #footer {height: 200px; background: #333;}
 
 /* 컨텐츠 레이아웃 */
-#cont_nav {}
-#cont_tit {width: 100%; height: 200px; background: #444;}
-#cont_ban {width: 100%; height: 200px; background: #555;}
+#cont_nav {background: #f6f8fa;}
+#cont_tit {background: #EEEFFF;}
+#cont_ban {background: #cfd0ff;}
 #cont_cont {width: 100%; height: 200px; background: #333;}
 
 /* 컨테이너 */
@@ -58,4 +58,25 @@ color: #fff; padding: 5px 20px 6px 20px; margin-top: 40px; font-weight: normal; 
 .nav > div ol {overflow: hidden;}
 .nav > div ol li {float: left; width: 50%;}
 .nav > div.last ol li {width: 100%;}
-.nav > div ol li {text-decoration: underline;}
+/* .nav > div ol li {text-decoration: underline;} */
+
+/* 타이틀 */
+.tit {position: relative;}
+.tit h2 {font-family: 'Nanum Pen Script', cursive; font-size: 40px; text-align: center; padding: 5px 0; letter-spacing: 2px; color:#B0B3FF;}
+.tit .btn {position: absolute; top: 5px; right: 0; width: 60px; height: 60px;
+background: url(../img/icon.png) no-repeat 0 -600px;}
+
+/* 배너 */
+.ban {position: relative; padding: 24px 0 20px;}
+.ban a.prev {position: absolute; top:60px; left: -80px; width: 43px; height: 43px;
+background: url(../img/icon.png) no-repeat -150px 0;}
+.ban a.next {position: absolute; top:60px; right: -80px; width: 43px; height: 43px;
+background: url(../img/icon.png) no-repeat -150px -43px;}
+.ban a.prev:hover {background: url(../img/icon.png) no-repeat -193px 0;}
+.ban a.next:hover {background: url(../img/icon.png) no-repeat -193px -43px;}
+.ban ul {overflow: hidden;}
+.ban ul li {float: left; width: 330px;}
+.ban ul li:last-child {text-align: right;}
+.ban ul li:nth-child(2) {text-align: center;}
+.ban ul li img {border: 4px solid #B0B3FF;}
+.ban ul li img:hover {border-color: #4E8AFF;}

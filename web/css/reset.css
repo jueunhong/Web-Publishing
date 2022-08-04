@@ -5,17 +5,20 @@ body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, input,
 fieldset, legend, p, select, table, th, td, tr, textarea, button, form {margin: 0; padding: 0;}
 
 /* a 링크 초기화 */
-a:hover {color: green;}
-a {color: #222; text-decoration: none;}
+a:hover {color: #B0B3FF;}
+a {color: #160F35; text-decoration: none;}
 
 /* 폰트 초기화 */
 body, input, textarea, select, button, table {
     font-family: 'Nanum Gothic', 'Malgun Gothic', '맑은 고딕', dotum, '돋움', 'sans-serif';
-    color: #222; font-size: 13px; line-height: 1.5;
+    color: #160F35; font-size: 13px; line-height: 1.5;
 }
 
 /* 볼릿기호 초기화 */
 dl, ul, ol, li, menu {list-style: none;}
+
+/* 제목 태그 초기화 */
+h1, h2, h3, h4, h5, h6 {font-style: 13px; color: #160F35; font-weight: normal;}
 
 /* IR 기법 */
 /* 의미 있는 이미지의 대체 텍스트를 제공하는 경우 */
