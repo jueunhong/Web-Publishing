@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 /* 스킵 내비게이션 */
-#skip {}
 #skip a {position: absolute; left: 0px; top: -35px; border: 1px solid #fff; color: #fff;
 background: #333; line-height: 30px; width: 180px; text-align: center;}
 #skip a:active,
@@ -17,7 +16,7 @@ background: #333; line-height: 30px; width: 180px; text-align: center;}
 #cont_nav {background: #f6f8fa;}
 #cont_tit {background: #EEEFFF;}
 #cont_ban {background: #cfd0ff;}
-#cont_cont {width: 100%; height: 200px; background: #333;}
+#cont_cont {background: #e0e0ff;}
 
 /* 컨테이너 */
 .container {width: 990px; margin: 0 auto; height: inherit; /*background: rgba(225, 225, 225, 0.3);*/}
@@ -34,7 +33,7 @@ color: #fff; padding: 5px 20px 6px 20px; margin-top: 40px; font-weight: normal; 
     font-size: 18px; color: #fff; padding: 5px 20px 6px 20px; margin-top: -5px;
 }
 .header .header_icon {text-align: center; margin-top: 30px;}
-.header .header_icon a{width: 60px; height: 60px; display: inline-block; background:url(../img/icon.png); margin:5px;}
+.header .header_icon a{width: 60px; height: 60px; display: inline-block; background:url(../img/icon\ 1_edited.png); margin:5px;}
 .header .header_icon a.icon1 {background-position: 0 0;}
 .header .header_icon a.icon2 {background-position: 0 -60px;}
 .header .header_icon a.icon3 {background-position: 0 -120px;}
@@ -64,19 +63,52 @@ color: #fff; padding: 5px 20px 6px 20px; margin-top: 40px; font-weight: normal; 
 .tit {position: relative;}
 .tit h2 {font-family: 'Nanum Pen Script', cursive; font-size: 40px; text-align: center; padding: 5px 0; letter-spacing: 2px; color:#B0B3FF;}
 .tit .btn {position: absolute; top: 5px; right: 0; width: 60px; height: 60px;
-background: url(../img/icon.png) no-repeat 0 -600px;}
+background: url(../img/icon\ 1_edited.png) no-repeat 0 -600px;}
 
 /* 배너 */
 .ban {position: relative; padding: 24px 0 20px;}
 .ban a.prev {position: absolute; top:60px; left: -80px; width: 43px; height: 43px;
-background: url(../img/icon.png) no-repeat -150px 0;}
+background: url(../img/icon\ 1_edited.png) no-repeat -150px 0;}
 .ban a.next {position: absolute; top:60px; right: -80px; width: 43px; height: 43px;
-background: url(../img/icon.png) no-repeat -150px -43px;}
-.ban a.prev:hover {background: url(../img/icon.png) no-repeat -193px 0;}
-.ban a.next:hover {background: url(../img/icon.png) no-repeat -193px -43px;}
+background: url(../img/icon\ 1_edited.png) no-repeat -150px -43px;}
+.ban a.prev:hover {background: url(../img/icon\ 1_edited.png) no-repeat -193px 0;}
+.ban a.next:hover {background: url(../img/icon\ 1_edited.png) no-repeat -193px -43px;}
 .ban ul {overflow: hidden;}
 .ban ul li {float: left; width: 330px;}
-.ban ul li:last-child {text-align: right;}
-.ban ul li:nth-child(2) {text-align: center;}
+.ban ul li.ban_img3 {text-align: right;}
+.ban ul li.ban_img2 {text-align: center;}
 .ban ul li img {border: 4px solid #B0B3FF;}
-.ban ul li img:hover {border-color: #4E8AFF;}
+.ban ul li img:hover { border-color: #4E8AFF; }
+.ban ul li.img_des1 {text-align: center; width: 300px;}
+.ban ul li.img_des2 {text-align: center; width: 400px;}
+.ban ul li.img_des3 {text-align: center; width: 280px;}
+
+/* 컨텐츠 */
+.cont {overflow: hidden; padding-top: 30px;}
+.cont .column {position: relative; float: left; width: 289px; height: 363px;;
+margin: 0 30px 30px 0; padding-right: 30px; }
+.cont .col1 {border-right: 1px solid #c8c8c8;}
+.cont .col2 {border-right: 1px solid #c8c8c8;}
+.cont .col3 {margin-right: 0; padding-right: 0;}
+.cont .col4 {border-right: 1px solid #c8c8c8;}
+.cont .col5 {border-right: 1px solid #c8c8c8;}
+.cont .col6 {margin-right: 0; padding-right: 0;}
+
+.cont .column .ico_img {display: block; width: 60px; height: 60px;
+background: url(../img/icon\ 1_edited.png) no-repeat; position: absolute; left: 0; top: 0;}
+.cont .column .ico_tit {padding-left: 70px; font-size: 16px; color:#7b7fff }
+.cont .column .ico_desc {padding-left: 70px; border-bottom: 1px solid #d0d0d0;
+padding-bottom: 15px;}
+
+.cont .col1 .ico_img {background-position: 0 -240px;}
+.cont .col2 .ico_img {background-position: 0 -300px;}
+.cont .col3 .ico_img {background-position: 0 -360px;}
+.cont .col4 .ico_img {background-position: 0 -420px;}
+.cont .col5 .ico_img {background-position: 0 -480px;}
+.cont .col6 .ico_img {background-position: 0 -540px;}
+.cont .col1 .ico_img:hover {background-position: -60px -240px;}
+.cont .col2 .ico_img:hover {background-position: -60px -300px;}
+.cont .col3 .ico_img:hover {background-position: -60px -360px;}
+.cont .col4 .ico_img:hover {background-position: -60px -420px;}
+.cont .col5 .ico_img:hover {background-position: -60px -480px;}
+.cont .col6 .ico_img:hover {background-position: -60px -540px;}
