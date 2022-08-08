@@ -182,3 +182,14 @@ background: url(../img/dot\ 1.png) no-repeat 9px 8px; padding-left: 18px;}
 .tab_menu ul li.active {background: #7b7fff;}
 .tab_menu ul li.active a {color:#fff}
 .tab_menu ul li.active ul li a {color:#333}
+
+/* 게시판4 */
+.notice4 {position: relative; border: 1px solid #7b7fff;}
+.notice4 h4 {border-bottom: 1px solid #7b7fff; padding: 8px 10px; color:#7b7fff; font-size: 14px; font-weight: 700;}
+.notice4 h4 em {color:#4E8AFF}
+.notice4 ul {padding: 10px;  }
+.notice4 li {overflow: hidden; background: url(../img/dot\ 1.png) no-repeat 0 8px; padding-left: 8px; padding-bottom: 2px;}
+.notice4 li a {float: left; width: 60%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.notice4 li span {float: right; width: 30%; text-align: right;}
+.notice4 ul a.more {position: absolute; right: 9px; top: 9px; display: block;}
+
