@@ -67,7 +67,7 @@ background: url(../img/icon\ 1_edited.png) no-repeat 0 -600px;}
 .tit .btn.on {background-position: 0 -660px;}
 
 /* 배너 */
-.ban {position: relative; padding: 24px 0 20px;}
+/* .ban {position: relative; padding: 24px 0 20px;}
 .ban a.prev {position: absolute; top:60px; left: -80px; width: 43px; height: 43px;
 background: url(../img/icon\ 1_edited.png) no-repeat -150px 0;}
 .ban a.next {position: absolute; top:60px; right: -80px; width: 43px; height: 43px;
@@ -82,7 +82,26 @@ background: url(../img/icon\ 1_edited.png) no-repeat -150px -43px;}
 .ban ul li img:hover { border-color: #4E8AFF; }
 .ban ul li.img_des1 {text-align: center; width: 300px;}
 .ban ul li.img_des2 {text-align: center; width: 400px;}
-.ban ul li.img_des3 {text-align: center; width: 280px;}
+.ban ul li.img_des3 {text-align: center; width: 280px;} */
+
+/* 슬릭 배너 */
+.ban {position: relative; padding: 24px 0 50px;}
+.ban .slick-prev {position: absolute; top:70px; left: -80px; width: 43px; height: 43px;
+    background: url(../img/icon\ 1_edited.png) no-repeat -150px 0; text-indent: -9999px;}
+.ban .slick-next {position: absolute; top:70px; right: -80px; width: 43px; height: 43px;
+    background: url(../img/icon\ 1_edited.png) no-repeat -150px -43px; text-indent: -9999px;}
+.ban .slick-prev:hover {background: url(../img/icon\ 1_edited.png) no-repeat -193px 0;}
+.ban .slick-next:hover {background: url(../img/icon\ 1_edited.png) no-repeat -193px -43px;}
+.ban img {border: 4px solid #B0B3FF;}
+.ban img:hover {border-color: #7b7fff;}
+.ban span {width: 100%; text-align: center; display: block; padding-top: 10px; font-size: 12px; color:#141647;}
+.ban .slick-slide {margin: 10px}
+.ban .slick-dots {position: absolute; bottom: 15px; display: block; width: 100%;
+text-align: center;}
+.ban .slick-dots li {display: inline-block; width: 15px; height: 15px; margin: 5px;}
+.ban .slick-dots li button {font-size: 0; line-height: 0; display: block; width: 15px; height: 15px;
+cursor: pointer; background: #B0B3FF; border-radius: 50%;}
+.ban .slick-dots li.slick-active button {background: #7b7fff;}
 
 /* 컨텐츠 */
 .cont {overflow: hidden; padding-top: 30px;}

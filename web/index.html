@@ -10,6 +10,7 @@
     <!-- CSS STYLE -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css">
 
     <!-- 웹 폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -124,7 +125,7 @@
             <div id="cont_ban">
                 <div class="container">
                     <div class="ban">
-                        <a href="#" class="prev"><span class="ir_pm">이전 이미지</span></a>
+                        <!-- <a href="#" class="prev"><span class="ir_pm">이전 이미지</span></a>
                         <ul>
                             <li class="ban_img1"><a href="https://airy-fang-202.notion.site/DeliverBle-2bddb93eaf454e7bada108f706d16ef1"><img src="img/deliverble.png" alt="딜리버블 기획"></a></li>
                             <li class="ban_img2"><a href=""><img src="img/web3.png" alt="web3 스터디"></a></li>
@@ -133,7 +134,20 @@
                             <li class="img_des2"><h3>web3 스터디 풀출석</h3></li>                
                             <li class="img_des3"><h3>sql & ga4 스터디 도우미</h3></li>
                         </ul>
-                        <a href="#" class="next"><span class="ir_pm">다음 이미지</span></a>
+                        <a href="#" class="next"><span class="ir_pm">다음 이미지</span></a> -->
+
+                        <div><a href="https://www.notion.so/DeliverBle-2bddb93eaf454e7bada108f706d16ef1"><img src="img/deliverble.png" alt="딜리버블 기획"></a><span>딜리버블 기획</span></div>
+                        <div><a href="https://github.com/Web3-Study-with-Sigrid-Jin/SOPT-web3-study"><img src="img/web3.png" alt="web3 스터디"></a><span>web3 스터디</span></div>
+                        <div><a href="#"><img src="img/sql.png" alt="sql & ga4 스터디 헬퍼"></a><span>sql & ga4 스터디 헬퍼</span></div>
+                        <div><a href="#"><img src="img/image 106.png" alt="낭만기팟"></a><span>낭만기팟</span></div>
+                        <div><a href="#"><img src="img/image 108.png" alt="솝트 1차행사 참여"></a><span>솝트 1차행사 참여</span></div>
+                        <div><a href="#"><img src="img/image 107.png" alt="솝트 2차 행사 참여"></a><span>솝트 2차 행사 참여</span></div>
+                        <div><a href="https://github.com/jueunhong/html-css-boostcourse"><img src="img/image 102.png" alt="html, css 강의 수강"></a><span>html, css 입문 강의 수강</span></div>
+                        <div><a href="https://github.com/jueunhong/js-playground"><img src="img/image 103.png" alt="javascript 강의 수강"></a><span>javascript 입문 강의 수강</span></div>
+                        <div><a href="https://github.com/jueunhong/Web-Publishing"><img src="img/image 101.png" alt="웹 표준 사이트 제작"></a><span>웹 표준 사이트 제작</span></div>
+                        <div><a href="#"><img src="img/image 100.png" alt="반응형 사이트 제작"></a><span>반응형 사이트 제작</span></div>
+                        <div><a href="#"><img src="img/image 104.png" alt="영화 예매 사이트 제작"></a><span>영화 예매 사이트 제작1</span></div>
+                        <div><a href="#"><img src="img/image 105.png" alt="영화 예매 사이트 제작"></a><span>영화 예매 사이트 제작2</span></div>
                     </div>
                 </div>
             </div>
@@ -433,7 +447,19 @@
 
     <!-- script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script type="text/javascript">
+        //배너
+        //html마크업 셋팅 -> css 연동 -> 제이쿼리 연동 --> 제이쿼리 호출
+        $(".ban").slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            dots: true
+        });
+
         //버튼을 클릭하면 전체 메뉴를 보이게 하세요.
         $(".tit .btn").click(function(e){
             e.preventDefault();
