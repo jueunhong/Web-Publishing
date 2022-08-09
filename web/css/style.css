@@ -13,7 +13,7 @@ background: #333; line-height: 30px; width: 180px; text-align: center;}
 #footer {border-top: 1px solid #eee;}
 
 /* 컨텐츠 레이아웃 */
-#cont_nav {background: #f6f8fa;}
+#cont_nav {background: #f6f8fa; display: none;}
 #cont_tit {background: #EEEFFF;}
 #cont_ban {background: #cfd0ff;}
 #cont_cont {background: #e0e0ff;}
@@ -64,6 +64,7 @@ color: #fff; padding: 5px 20px 6px 20px; margin-top: 40px; font-weight: normal; 
 .tit h2 {font-family: 'Nanum Pen Script', cursive; font-size: 40px; text-align: center; padding: 5px 0; letter-spacing: 2px; color:#B0B3FF;}
 .tit .btn {position: absolute; top: 5px; right: 0; width: 60px; height: 60px;
 background: url(../img/icon\ 1_edited.png) no-repeat 0 -600px;}
+.tit .btn.on {background-position: 0 -660px;}
 
 /* 배너 */
 .ban {position: relative; padding: 24px 0 20px;}
