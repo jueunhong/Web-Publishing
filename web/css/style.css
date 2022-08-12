@@ -273,3 +273,10 @@ margin-bottom: 3px; background: #fff;}
 left: 0; top: 2px;}
 .footer ul li:first-child::before {width: 0; height: 0;}
 .footer .w3c {margin-top: 15px;}
+
+/* 레이어 팝업 */
+#layer {display: none; position: absolute; left: 50px; top: 50px; width: 700px; border: 10px solid #c6c8fc; box-shadow: 3px 3px 10px rgab(0, 0, 0, 0.4);}
+#layer img {width: 100%; display: block;}
+#layer .close {position: absolute; right: 20px; top: 20px; background: #7b7fff; padding: 1px 6px;
+color: #fff;}
+#layer .close:hover {text-decoration: underline;}

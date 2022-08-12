@@ -271,7 +271,7 @@
                             <div class="popup">
                                 <h4>Advertisement</h4>
                                 <ul>
-                                    <li><a href="#"><img src="img/sban07.jpg" alt="이미지1"></a></li>
+                                    <li class="layer"><a href="#"><img src="img/sban07.jpg" alt="이미지1"></a></li>
                                     <li><a href="#"><img src="img/sban08.jpg" alt="이미지2"></a></li>
                                     <li class="last"><a href="#"><img src="img/sban09.jpg" alt="이미지3"></a></li>
                                 </ul>
@@ -456,6 +456,13 @@
     </div>
     <!-- //wrap -->
 
+    <!-- layer popup -->
+    <div id="layer">
+        <img src="img/webstandard1.jpg" alt="웹표준사이트">
+        <a href="#" class="close">Close</a>
+    </div>
+    <!-- //layer popup -->
+
     <!-- script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
@@ -473,6 +480,18 @@
         }
         $tab_list.find("ul>li>a").click(tabMenu).focus(tabMenu);
         
+        // 레이어 팝업
+        $(".layer").click(function(e){
+            e.preventDefault();
+            // $("#layer").css("display", "block");
+            $("#layer").slideDown(200);
+        });
+
+        $("#layer ,close").click(function(e){
+            e.preventDefault();
+            $("#layer").slideUp(200);
+        });
+
         //배너
         //html마크업 셋팅 -> css 연동 -> 제이쿼리 연동 --> 제이쿼리 호출
         $(".ban").slick({
